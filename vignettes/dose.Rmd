@@ -1,0 +1,35 @@
+---
+title: "Пример работы пакета dosecount"
+author: "Алексей Гудаков"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{dose}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, echo=FALSE, message=F}
+library(dosecount)
+```
+
+Пакет состоит из одной функции `D()`. Она расчитывает дозу, которую получил образец, на основе параметров рентгеновского дифрактометра.
+
+Пример работы функции:
+
+```{r}
+D(I_mA = 0.1, U_kV = 20, Time_minute = 20)
+```
+
+Функция производит вычисления на основе формул из публикации
+
+Kothan S., Tungjai M. An estimation of x-radiation output using mathematic model //American Journal of Applied Sciences. – 2011. – Т. 8. – №. 9. – С. 923.
+
+
+

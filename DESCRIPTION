@@ -1,0 +1,17 @@
+Package: dosecount
+Type: Package
+Title: Dose count package
+Version: 0.1.0
+Author: Alexey Gudakov
+Maintainer: The package maintainer <alexey-gudakov@yandex.ru>
+Description: This package was designed for x-ray dose counting.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
